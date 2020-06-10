@@ -39,11 +39,10 @@ let colorsCopy = {...colors};
 
 let numbers = [4, 6, 10];
 
-function addNums(num1, num2, num3) {
-  return num1 + num2 + num3;
+function addNums(num1, num2, num3){
+   return num1 + num2 + num3;
 }
-addNums();
-const result = [...numbers];
+let result = addNums(...numbers);
 
 ////////// PROBLEM 4 //////////
 
