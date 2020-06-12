@@ -77,7 +77,7 @@ for(let num in object){
 //Code Here
 function double(obj){
   for(let key in obj){
-    obj[key] = obj[key] * 2
+    obj[key] = obj[key] * 2 
   }
   return obj;
 }

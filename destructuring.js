@@ -95,17 +95,10 @@ function ingredients(food){
 */
 
 //Code Here
-  function largeNumbers({first, second, third}){
+  function largeNumbers({first, second, third}) {
     return Math.min(first, second, third)
   }
-    
-      // if (first < second && first < third){
-      //   return true
-      //     else if (second < first && second < third)
-      //       return
-      //       else  
-
-
+ 
 ////////// PROBLEM 6 //////////
 
 /*
@@ -115,6 +108,16 @@ function ingredients(food){
 */
 
 //Code Here
-  function numberGroups ({a, b, c}){
-    return Math.max(a, b, c)
+  function numberGroups ({a, b, c,}){
+    let newArray = [a, b, c];
+    let longestArray;
+
+    for(let i = 1; i < newArray.length; i++) {
+      if(newArray[0].length > newArray[i].length) {
+        longestArray = newArray[0];
+      } else if(newArray[0].length < newArray[i].length) {
+        longestArray = newArray[i];
+      } 
+    }
+    return longestArray;
   }
